@@ -21,9 +21,9 @@ public class AppStartupRunner implements ApplicationRunner {
 
 		RestTemplate restTemplate = new RestTemplate();
 		//url get api lan dau tien
-		restTemplate.getForObject("http://localhost:8080/api/level/getAll", String.class);
-		restTemplate.getForObject("http://localhost:8080/api/topic/getTopicByLid", String.class);
+//		restTemplate.getForObject("http://localhost:8080/api/level/getAll", String.class);
+//		restTemplate.getForObject("http://localhost:8080/api/topic/getTopicByLid", String.class);
 
-		TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+//		TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
 	}
 }
